@@ -80,7 +80,7 @@ exports.checkDamage = async (req, res) => {
             type:"overflow",
             date:Date.now()
         });
-        manhole[0].status.overflow = true;
+        manhole[0].status.manholeCover = true;
         Overflow.find({},(err,overflow) => {
             
             overflow[0].total_missing += 1
